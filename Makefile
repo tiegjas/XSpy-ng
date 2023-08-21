@@ -1,10 +1,13 @@
-LDFLAGS = -lX11 -L/usr/X11R6/lib
+LDFLAGS = -lX11
 CFLAGS = -Wall
+CC = gcc
 
 all: xspy
+
+xspy: xspy.c
+	$(CC) $(CFLAGS) -o xspy xspy.c $(LDFLAGS)
 
 clean:
 	rm -f *.o xspy
 
 .PHONY: all clean
-
