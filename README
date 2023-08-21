@@ -1,0 +1,22 @@
+Installation:
+	make
+
+Usage:
+  xspy {list | spy [window_id]| help}
+
+  Valid modes :
+        list : displays all windows of the display.
+        spy : listen the windows for key events.
+        help : this help message.
+
+  Parameters :
+        window_id : the id of the window to listen.
+                    If not specified, listen to all windows
+
+How to change the display?
+  $ DISPLAY=host:display program
+  Example :
+  $ DISPLAY=tx10:0 xspy
+
+
+
